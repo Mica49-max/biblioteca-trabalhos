@@ -11,8 +11,8 @@ use Illuminate\Support\Str;
 class Project extends Model
 {
     protected $fillable = [
-        'title', 'slug', 'description', 'type', 'status',
-        'started_at', 'finished_at', 'github_url', 'demo_url',
+        'title', 'slug', 'description', 'type', 'status', 'is_public',
+        'started_at', 'finished_at', 'github_url', 'demo_url', 'download_url',
         'local_path', 'cover_image', 'notes', 'learned',
     ];
 
@@ -21,6 +21,7 @@ class Project extends Model
         return [
             'type' => ProjectType::class,
             'status' => ProjectStatus::class,
+            'is_public' => 'boolean',
             'started_at' => 'date',
             'finished_at' => 'date',
         ];
