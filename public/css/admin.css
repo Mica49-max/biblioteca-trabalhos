@@ -1,0 +1,32 @@
+.admin-bar { background: var(--card); border-bottom: 1px solid var(--border); }
+.admin-bar-inner { display: flex; justify-content: space-between; align-items: center; padding-top: .75rem; padding-bottom: .75rem; }
+.admin-bar-links { display: flex; gap: 1rem; align-items: center; }
+.admin-bar-links a { color: var(--muted); text-decoration: none; }
+.admin-bar-links a:hover { color: var(--accent); }
+.admin-bar-links form { margin: 0; }
+
+.link-button { background: none; border: 0; padding: 0; font: inherit; color: var(--accent); font-weight: 700; cursor: pointer; }
+
+.login-box {
+    max-width: 380px;
+    margin: 2rem auto;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.form label { display: block; font-weight: 600; margin: 1rem 0 .35rem; }
+.form input[type="text"],
+.form input[type="password"] {
+    width: 100%;
+    padding: .6rem .75rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+}
+.form .btn-block { margin-top: 1.25rem; }
+.error { color: #dc2626; margin: .75rem 0 0; font-size: .9rem; }
